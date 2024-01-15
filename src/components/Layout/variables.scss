@@ -1,0 +1,8 @@
+$width: 1440px;
+$inset: 120px;
+
+
+@function getGridWidth() {
+    @return calc(min(#{$width}, 100vw) - 2 * #{$inset});
+
+}
