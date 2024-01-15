@@ -1,8 +1,22 @@
 $width: 1440px;
 $inset: 120px;
+$gutter: 16px;
 
+$transition: 0.5s ease; 
 
 @function getGridWidth() {
     @return calc(min(#{$width}, 100vw) - 2 * #{$inset});
 
+}
+
+@function getColumnWidth($grid) {
+    $gridWidth: getGridWidth()
+    $gutterWidth = $gutter * ($grid - 1);
+    @return calc((#{$gridWidth} - #{$gutterWidth}) / #{$grid})
+}
+
+@function getWidth($columns, $grid) {
+    $colWidth: getColumnWidth($grid);
+    $gutterWidth: $gutter * ($columns-1);
+    @return calc((#{$colWidth} + #{$gutterWidth}) * #{$columns})
 }
