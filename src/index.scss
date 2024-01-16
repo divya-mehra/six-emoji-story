@@ -1,0 +1,11 @@
+@import "../src//components//Layout/base.scss";
+
+html {
+  font-size: $base;
+};
+
+.page {
+  min-height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+}

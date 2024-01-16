@@ -1,0 +1,14 @@
+@import "../Layout/base.scss";
+
+.title-page-all-text {
+    gap: $base * 2;
+}
+
+.title-page-text {
+    gap: $base;
+}
+
+.title-page-title {
+    font-weight: 400;
+}
+

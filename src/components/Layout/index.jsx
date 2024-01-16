@@ -1,8 +1,17 @@
-import "./base.scss"
+import "./base.scss";
 
-const Layout = ({children}) => {
+const Layout = ({ children, title }) => {
+  return (
+    <>
+      {title ? (
+        <div className="container title-page">{children}</div>
+      ) : (
+        
+          <div className=" container section-area">{children}</div>
+        
+      )}
+    </>
+  );
+};
 
-    return ( <></> );
-}
- 
 export default Layout;
