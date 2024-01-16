@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="page">
       <TitlePage emojis={emojis} />
-      <Layout title={true}>
+      <Layout title={false}>
       {emojis.map((e) => {
         return (
           <Section
@@ -22,9 +22,10 @@ function App() {
             currentEmoji={currentEmoji}
             setCurrentEmoji={setCurrentEmoji}
             year={e.year}
-            title={e.title}
+            title={e.sectionTitle}
             subtitle={e.subtitle}
             grid={e.grid}
+            color={e.color}
           />
         );
       })}

@@ -6,9 +6,7 @@ const Layout = ({ children, title }) => {
       {title ? (
         <div className="container title-page">{children}</div>
       ) : (
-        
-          <div className=" container section-area">{children}</div>
-        
+        <div className="container section-area">{children}</div>
       )}
     </>
   );
