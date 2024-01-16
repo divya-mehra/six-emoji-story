@@ -13,6 +13,7 @@ const Section = ({
   title,
   year,
   subtitle,
+  sectionTitle,
   id,
   grid,
   color,
@@ -20,21 +21,19 @@ const Section = ({
   // console.log(emojis);
   // console.log(currentEmoji);
 
-  let currentEmojiData = emojis.find((emoji) => emoji.id === currentEmoji);
-
   return (
-    // <Layout title={false}>
-    <div className="section-background" style={{backgroundColor: color}}>
-        <div className=" flex individual-section">
-      <div className="half-column">
-        <Grid emojis={emojis} currentEmoji={currentEmoji} grid={grid}></Grid>
-      </div>
-      <div className="half-column">
-        <SectionHeader title={title} subtitle={subtitle} year={year} />
-      </div>
+    
+    <div className="section-background" style={{ backgroundColor: color }}>
+      <div className="flex individual-section">
+        <div className="half-column">
+          <Grid emojis={emojis} color={color} currentEmoji={currentEmoji} grid={grid}></Grid>
+        </div>
+        <div className="half-column">
+          <SectionHeader title={sectionTitle} subtitle={subtitle} year={year} />
+        </div>
       </div>
     </div>
-    // </Layout>
+    
   );
 };
 

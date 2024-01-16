@@ -1,7 +1,13 @@
-import "./index.scss"
+import "./index.scss";
+import { SectionHeader } from "../Headlines";
 
-const Text = () => {
-    return ( <></> );
-}
- 
+const Text = ({
+
+}) => {
+  return (
+    <>
+    </>
+  );
+};
+
 export default Text;

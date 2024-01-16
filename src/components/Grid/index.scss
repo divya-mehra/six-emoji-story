@@ -1,0 +1,7 @@
+.grid {
+  display: grid;
+  position: sticky;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  
+}
