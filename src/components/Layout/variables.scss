@@ -12,11 +12,13 @@ $transition: 0.5s ease;
 @function getColumnWidth($grid) {
     $gridWidth: getGridWidth()
     $gutterWidth = $gutter * ($grid - 1);
-    @return calc((#{$gridWidth} - #{$gutterWidth}) / #{$grid})
+    @return calc((#{$gridWidth} - #{$gutterWidth}) / #{$grid});
 }
 
 @function getWidth($columns, $grid) {
     $colWidth: getColumnWidth($grid);
     $gutterWidth: $gutter * ($columns-1);
-    @return calc((#{$colWidth} + #{$gutterWidth}) * #{$columns})
+    @return calc((#{$colWidth} + #{$gutterWidth}) * #{$columns});
 }
+
+

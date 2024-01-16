@@ -1,8 +1,8 @@
-const emojiData = [
+const emojis = [
     {
         name: "heart",
         number: "1999",
-        title: "Young ♥️",
+        title: "Young Love",
         content: ["hi"],
         subtitle: "The first* set of emojis is created in Japan",
       },
@@ -40,4 +40,4 @@ const emojiData = [
       },
 ];
 
-export default emojiData;
+export default emojis;
