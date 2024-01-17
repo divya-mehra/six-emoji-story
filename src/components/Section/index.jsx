@@ -23,7 +23,8 @@ const Section = ({
 
   return (
     
-    <div className="section-background">
+    <div className="section-background" style={{backgroundColor: color}}>
+        <Transition start={true} currentColor={color} id={id} emojis={emojis}/>
       <div className="flex individual-section">
         <div className="half-column">
           <Grid emojis={emojis} color={color} currentEmoji={currentEmoji} grid={grid}></Grid>
@@ -33,7 +34,7 @@ const Section = ({
           <Text/>
         </div>
       </div>
-      <Transition currentColor={color} id={id} emojis={emojis}/>
+      <Transition start={false} currentColor={color} id={id} emojis={emojis}/>
     </div>
     
   );
