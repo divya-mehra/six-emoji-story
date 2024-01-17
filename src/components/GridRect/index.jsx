@@ -6,6 +6,7 @@ const GridRect = ({ id, currentEmoji, color, emojis, grid }) => {
   let light = "#f1f1f1";
 
   const [fill, setFill] = useState(null);
+  
   useEffect(() => {
     if (grid.includes(id)) {
       let delay = Math.random() * 1000;

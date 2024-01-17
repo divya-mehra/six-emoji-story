@@ -1,0 +1,14 @@
+@import '../Layout/base.scss';
+
+.body-text {
+    box-sizing: border-box;
+    width: 90%;
+    align-self: flex-end;
+    padding-right: $base*5;
+}
+
+.text {
+    // for now
+    padding: 30% 0;
+    text-align: justify;
+}

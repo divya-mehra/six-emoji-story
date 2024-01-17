@@ -1,4 +1,7 @@
+@import "../Layout/base.scss";
+
 .grid {
+    width: 80%;
   display: grid;
   position: sticky;
   grid-template-columns: repeat(12, 1fr);

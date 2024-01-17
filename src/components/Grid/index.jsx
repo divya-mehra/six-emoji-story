@@ -13,14 +13,6 @@ const Grid = ({emojis, grid, currentEmoji, color}) => {
         threshold: 0.5,
       });
 
-    //   useEffect(() => {
-    //     if (inView) {
-    //       // Parent component is in view, start your logic
-    //     //   setGridInView(true)
-          
-    //     }
-    //   }, [inView]);
-
 
     // make the grid
 

@@ -13,13 +13,12 @@ const Section = ({
   title,
   year,
   subtitle,
-  sectionTitle,
   id,
   grid,
   color,
 }) => {
   // console.log(emojis);
-  // console.log(currentEmoji);
+  
 
   return (
     
@@ -28,8 +27,9 @@ const Section = ({
         <div className="half-column">
           <Grid emojis={emojis} color={color} currentEmoji={currentEmoji} grid={grid}></Grid>
         </div>
-        <div className="half-column flex-column">
-          <SectionHeader title={sectionTitle} subtitle={subtitle} year={year} />
+        <div className="half-column flex-column all-text">
+          <SectionHeader title={title} subtitle={subtitle} year={year} />
+          <Text/>
         </div>
       </div>
     </div>

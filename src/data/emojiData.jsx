@@ -36,8 +36,8 @@ const emojis = [
     id: 2,
     name: "hand",
     year: "2015",
-    title: "✊🏻✊🏼✊🏽✊🏾✊🏿 ~ Department of DEI ~",
-    sectionTitle: "~ Department of DEI ~",
+    title: "✊🏻✊🏼✊🏽✊🏾✊🏿 ~ Dept. of DEI ~",
+    sectionTitle: "Dept. of DEI",
     subtitle: "Unicode adds five skin tone modifiers to its standard yellow",
     grid: [
       6, 7, 8, 16, 17, 18, 20, 21, 22, 28, 30, 32, 34, 35, 36, 40, 42, 44, 46,
@@ -51,8 +51,8 @@ const emojis = [
     id: 3,
     name: "bee",
     year: "2016",
-    title: "Becky, Leave Queen 🐝 Alone",
-    sectionTitle: "Becky, Leave Queen Bey Alone",
+    title: "Leave Queen 🐝 Alone",
+    sectionTitle: "Leave Queen Bey Alone",
     subtitle:
       "Pop star Beyonce's release of Lemonade leads to a misunderstanding on chef Rachel Ray's Instagram",
     grid: [
@@ -68,7 +68,7 @@ const emojis = [
     name: "pistol",
     year: "2018",
     title: " Do 🔫 = real 🔫?",
-    sectionTitle: "Do picture guns equal real guns?",
+    sectionTitle: "Do Picture Guns = Real Ones?",
     subtitle: "Apple replaces the pistol with a water gun",
     grid: [
       38, 50, 51, 52, 53, 54, 55, 56, 57, 58, 62, 63, 64, 65, 66, 67, 68, 69,
@@ -80,8 +80,8 @@ const emojis = [
     id: 6,
     name: "thumbsup",
     year: "2023",
-    title: "👍 (I'll see you in court)",
-    sectionTitle: "Ill see you in court",
+    title: "👍 (see you in court)",
+    sectionTitle: "See You In Court",
     subtitle:
       "A Canadian judge rules that the thumbs up emoji can be considered a contractual signature",
       
