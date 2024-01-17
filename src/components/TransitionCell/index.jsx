@@ -7,7 +7,7 @@ const TransitionCell = ({id, currentColor, nextColor}) => {
 
   useEffect(() => {
     setColor(currentColor)
-    let delay = Math.random() * 1000;
+    let delay = Math.random() * 1500;
     setTimeout(() => {
       setColor(nextColor);
     }, delay);

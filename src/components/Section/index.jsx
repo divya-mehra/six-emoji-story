@@ -23,7 +23,7 @@ const Section = ({
 
   return (
     
-    <div className="section-background" style={{ backgroundColor: color }}>
+    <div className="section-background">
       <div className="flex individual-section">
         <div className="half-column">
           <Grid emojis={emojis} color={color} currentEmoji={currentEmoji} grid={grid}></Grid>

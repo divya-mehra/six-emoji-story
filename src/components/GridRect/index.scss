@@ -1,7 +1,8 @@
-@import '../Layout//base.scss';
+@import '../Layout/base.scss';
 
 .gridRect {
     aspect-ratio: 1;
     transition: background-color 0.5s;
+    border: $light solid 0.2px;
     // background-color: $light;
   }
