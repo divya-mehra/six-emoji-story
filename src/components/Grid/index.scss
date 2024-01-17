@@ -1,10 +1,19 @@
 @import "../Layout/base.scss";
 
+.gridContainer {
+  height: 100%;
+  position: relative;
+}
+
 .grid {
-    width: 80%;
+  top: calc(50vh);
+  // top: 50%;  // Set the top value for stickiness
+  transform: translateY(-50%); // Adjust for half of the element's height
+  margin-top: auto;
+  margin-bottom: auto; // Allow the sticky element to stay centered
+  width: 80%;
   display: grid;
   position: sticky;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  
 }

@@ -24,7 +24,7 @@ const Grid = ({emojis, grid, currentEmoji, color}) => {
 
 
     return ( 
-    
+    <div className="gridContainer">
     <div className="grid" ref={ref}>
         {inView && divArr.map((i) => {
             return(
@@ -38,7 +38,9 @@ const Grid = ({emojis, grid, currentEmoji, color}) => {
             )
             })}
     
-    </div> );
+    </div> 
+    </div>
+    );
 }
  
 export default Grid;

@@ -2,8 +2,9 @@ import Layout from "../Layout";
 import "./index.scss";
 
 import Grid from "../Grid";
-import Text from "../Text";
 import { SectionHeader } from "../Headlines";
+import Text from "../Text";
+import Transition from "../Transition";
 import { useState, useRef } from "react";
 
 const Section = ({
@@ -32,6 +33,7 @@ const Section = ({
           <Text/>
         </div>
       </div>
+      <Transition currentColor={color} id={id} emojis={emojis}/>
     </div>
     
   );

@@ -1,15 +1,19 @@
 import Layout from "../Layout";
+import Transition from "../Transition";
 import "./index.scss";
 
 const TitlePage = ({ emojis }) => {
   return (
+    <>
     <Layout title={true}>
       <div className="half-column main-title">
         <div>Six</div>
         <div>Emoji</div>
         <div>Story</div>
       </div>
-      <div className="flex-column title-page-all-text half-column">
+      <div className="half-column flex-column">
+        <div className="flex-column title-page-all-text ">
+            
         {emojis.map((e) => {
           return (
             <div className="flex title-page-text">
@@ -19,7 +23,11 @@ const TitlePage = ({ emojis }) => {
           );
         })}
       </div>
+      </div>
+      
     </Layout>
+    <Transition id={-1} currentColor={"white"} emojis={emojis}/>
+    </>
   );
 };
 
