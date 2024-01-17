@@ -1,7 +1,3 @@
-@import "../Layout/base.scss";
-
-.cell {
-    width: 2.5%;
-    aspect-ratio: 1;
-    border: $light 0.2px solid;
+.section-breaker {
+    height: 10 * 2.5%;
 }

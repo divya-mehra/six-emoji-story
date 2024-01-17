@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import "./index.scss";
 
-const TransitionCell = (id, currentColor, nextColor) => {
-  const [color, setColor] = useState("white");
+const TransitionCell = ({id, currentColor, nextColor}) => {
+  const [color, setColor] = useState(currentColor);
+  console.log(`next color for ${id} is ${nextColor}` )
 
   useEffect(() => {
-    let delay = Math.random() * 2000;
+    setColor(currentColor)
+    let delay = Math.random() * 1000;
     setTimeout(() => {
-      setColor("blue");
+      setColor(nextColor);
     }, delay);
   }, []);
 

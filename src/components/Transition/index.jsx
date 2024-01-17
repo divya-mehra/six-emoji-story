@@ -15,7 +15,7 @@ const Transition = ({ currentColor, id, emojis }) => {
   } else {
     nextColor = "white";
   }
-
+console.log(nextColor)
   //make cells at the bottom of grid for transition
   const cellArr = [];
 
@@ -31,10 +31,10 @@ const Transition = ({ currentColor, id, emojis }) => {
 
 
   return (
-    <div ref={ref}>
+    <div className="section-breaker" ref={ref}>
         {inView &&  (
             <>
-      {Array.from({ length: 3 }).map((_, index) => (
+      {Array.from({ length: 10 }).map((_, index) => (
           <div key={index} className="flex">
             {cellArr.map((i) => (
               <TransitionCell

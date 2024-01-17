@@ -13,6 +13,7 @@
     width: getGridWidth();
     margin: 0 auto;
     min-height: 100vh;
+    height: 100%;
     flex-direction: row;
     justify-content: space-between;
     gap: $base*3;   
