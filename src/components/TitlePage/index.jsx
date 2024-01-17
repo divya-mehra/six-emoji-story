@@ -26,7 +26,7 @@ const TitlePage = ({ emojis }) => {
       </div>
       
     </Layout>
-    <Transition id={-1} currentColor={"white"} emojis={emojis}/>
+    {/* <Transition id={-1} currentColor={"white"} emojis={emojis}/> */}
     </>
   );
 };

@@ -3,7 +3,7 @@ import GridRect from "../GridRect";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
 
-const Grid = ({emojis, grid, currentEmoji, color}) => {
+const Grid = ({emojis, grid, currentEmoji, color, emojiColor}) => {
 
     const [gridInView, setGridInView] = useState(false);
 
@@ -33,6 +33,7 @@ const Grid = ({emojis, grid, currentEmoji, color}) => {
                 id={i.id}
                 currentEmoji={currentEmoji}
                 color={color}
+                emojiColor={emojiColor}
                 grid={grid}
                 />
             )

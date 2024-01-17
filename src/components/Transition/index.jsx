@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 const Transition = ({ currentColor, start, id, emojis }) => {
   let nextColor;
   let prevColor;
+  let selectedColor;
 
   let nextEmoji = id + 1;
 
@@ -13,7 +14,23 @@ const Transition = ({ currentColor, start, id, emojis }) => {
   } else {
     nextColor = "white";
   }
-  console.log(nextColor);
+  
+  let prevEmoji = id-1;
+  if (id>0) {
+    prevColor = emojis[prevEmoji].color;
+  } else {
+    prevColor = "white"
+  };
+
+  if(start) {
+    selectedColor = prevColor;
+  } else {
+    selectedColor = nextColor;
+  }
+
+
+
+
   //make cells at the bottom of grid for transition
   const cellArr = [];
 
@@ -28,15 +45,13 @@ const Transition = ({ currentColor, start, id, emojis }) => {
   });
 
   return (
-    <>
-      {Array.from({ length: 1 }).map((_, index) => (
-        <div key={index} className="flex">
+        <div className="flex">
           {cellArr.map((i) => (
-            <div key={i.id} className="cell"></div>
+            <div key={i.id} className="cell" style = {{backgroundColor: (i.id%2==0) ? currentColor : selectedColor }}
+            ></div>
           ))}
         </div>
-      ))}
-    </>
+      
   );
 };
 

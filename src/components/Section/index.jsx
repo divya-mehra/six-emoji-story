@@ -11,6 +11,7 @@ const Section = ({
   emojis,
   currentEmoji,
   setCurrentEmoji,
+  emojiColor,
   title,
   year,
   subtitle,
@@ -24,17 +25,17 @@ const Section = ({
   return (
     
     <div className="section-background" style={{backgroundColor: color}}>
-        <Transition start={true} currentColor={color} id={id} emojis={emojis}/>
+        {/* <Transition start={true} currentColor={color} id={id} emojis={emojis}/> */}
       <div className="flex individual-section">
         <div className="half-column">
-          <Grid emojis={emojis} color={color} currentEmoji={currentEmoji} grid={grid}></Grid>
+          <Grid emojis={emojis} color={color} currentEmoji={currentEmoji} emojiColor={emojiColor} grid={grid}></Grid>
         </div>
         <div className="half-column flex-column all-text">
           <SectionHeader title={title} subtitle={subtitle} year={year} />
           <Text/>
         </div>
       </div>
-      <Transition start={false} currentColor={color} id={id} emojis={emojis}/>
+      {/* <Transition start={false} currentColor={color} id={id} emojis={emojis}/> */}
     </div>
     
   );

@@ -15,6 +15,7 @@ const emojis = [
       127,
     ],
     color: "#D0493A",
+    emojiColor: "#FF5744"
   },
   {
     id: 1,
@@ -31,6 +32,7 @@ const emojis = [
       128, 129, 130, 131, 136, 137, 138, 139, 140, 141,
     ],
     color: "#0F2FA9",
+    emojiColor: "#1344FF"
   },
   {
     id: 2,

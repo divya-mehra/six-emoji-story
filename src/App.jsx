@@ -26,6 +26,7 @@ function App() {
             subtitle={e.subtitle}
             grid={e.grid}
             color={e.color}
+            emojiColor={e.emojiColor}
           />
         );
       })}
