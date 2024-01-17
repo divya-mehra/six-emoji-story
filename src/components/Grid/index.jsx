@@ -9,17 +9,17 @@ const Grid = ({emojis, grid, currentEmoji, color}) => {
 
     // check if in view
     const [ref, inView] = useInView({
-        triggerOnce: true,
+        triggerOnce: false,
         threshold: 0.5,
       });
 
-      useEffect(() => {
-        if (inView) {
-          // Parent component is in view, start your logic
-          setGridInView(true)
+    //   useEffect(() => {
+    //     if (inView) {
+    //       // Parent component is in view, start your logic
+    //     //   setGridInView(true)
           
-        }
-      }, [inView]);
+    //     }
+    //   }, [inView]);
 
 
     // make the grid
@@ -34,7 +34,7 @@ const Grid = ({emojis, grid, currentEmoji, color}) => {
     return ( 
     
     <div className="grid" ref={ref}>
-        {gridInView && divArr.map((i) => {
+        {inView && divArr.map((i) => {
             return(
                 <GridRect
                 key={i.id}

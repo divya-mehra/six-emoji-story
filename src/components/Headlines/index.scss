@@ -1,11 +1,11 @@
-.section-title {
+@import "../Layout//base.scss";
 
-}
-
-.section-subtitle {
-
-}
 
 .section-year {
+    align-self: flex-end;
+}
+
+.section-header {
+    // width: getWidth(5, 12);
     align-self: flex-end;
 }

@@ -2,7 +2,7 @@ import "./index.scss"
 
 export const SectionHeader = ({ title, subtitle, year }) => {
   return (
-    <div className="flex-column">
+    <div className="flex-column section-header">
       <div className="flex">
         <h3 className="section-year">{year}</h3>
         <h2 className="section-title"> {title} </h2>
