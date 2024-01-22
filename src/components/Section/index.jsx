@@ -38,6 +38,7 @@ const Section = ({
         </div>
       </div>
       {/* <Transition start={false} currentColor={color} id={id} emojis={emojis}/> */}
+      
     </div>
     
   );

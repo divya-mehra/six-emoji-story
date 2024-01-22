@@ -2,6 +2,7 @@ import "./index.scss";
 import GridRect from "../GridRect";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
+import GridInterface from "../GridInterface";
 
 const Grid = ({ emojis, grid, currentEmoji, color, emojiColor }) => {
   const [gridInView, setGridInView] = useState(false);
@@ -22,20 +23,23 @@ const Grid = ({ emojis, grid, currentEmoji, color, emojiColor }) => {
 
   return (
     <div className="gridContainer">
-      <div className="grid" ref={ref}>
-        {inView &&
-          divArr.map((i) => {
-            return (
-              <GridRect
-                key={i.id}
-                id={i.id}
-                currentEmoji={currentEmoji}
-                color={color}
-                emojiColor={emojiColor}
-                grid={grid}
-              />
-            );
-          })}
+      <div className="gridParent">
+        <div className="grid" ref={ref}>
+          {inView &&
+            divArr.map((i) => {
+              return (
+                <GridRect
+                  key={i.id}
+                  id={i.id}
+                  currentEmoji={currentEmoji}
+                  color={color}
+                  emojiColor={emojiColor}
+                  grid={grid}
+                />
+              );
+            })}
+        </div>
+        {/* <GridInterface /> */}
       </div>
     </div>
   );
