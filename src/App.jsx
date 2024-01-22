@@ -18,6 +18,7 @@ function App() {
           <Section
             key={e.id}
             id={e.id}
+            number={e.id}
             emojis={emojis}
             currentEmoji={currentEmoji}
             setCurrentEmoji={setCurrentEmoji}
