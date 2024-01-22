@@ -19,6 +19,7 @@ const Section = ({
   id,
   grid,
   color,
+  content
 }) => {
   // console.log(emojis);
 
@@ -33,7 +34,7 @@ const Section = ({
         </div>
         <div className="half-column flex-column all-text" >
           <SectionHeader title={title} subtitle={subtitle} year={year} />
-          <Text/>
+          <Text id={id} content={content}/>
         </div>
       </div>
       {/* <Transition start={false} currentColor={color} id={id} emojis={emojis}/> */}

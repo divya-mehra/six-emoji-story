@@ -28,6 +28,7 @@ function App() {
             grid={e.grid}
             color={e.color}
             emojiColor={e.emojiColor}
+            content={e.content}
           />
         );
       })}

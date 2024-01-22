@@ -1,5 +1,3 @@
-
-
 const emojis = [
   {
     id: 0,
@@ -15,7 +13,12 @@ const emojis = [
       127,
     ],
     color: "#D0493A",
-    emojiColor: "#FF5744"
+    emojiColor: "#FF5744",
+    content: [
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+    ],
   },
   {
     id: 1,
@@ -32,7 +35,12 @@ const emojis = [
       128, 129, 130, 131, 136, 137, 138, 139, 140, 141,
     ],
     color: "#0F2FA9",
-    emojiColor: "#1344FF"
+    emojiColor: "#1344FF",
+    content: [
+      "A little over 10 years later, Google joined forces with Japanese telecom carrier, KDDI AU, to create an emoji set for Gmail. They called it Project Mojo. (This was before the time of the Unicode Consortium, now overlord of emoji standardization.)",
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+    ],
   },
   {
     id: 2,
@@ -48,7 +56,12 @@ const emojis = [
       141, 142,
     ],
     color: "#73AD56",
-    emojiColor: "#8DF956"
+    emojiColor: "#8DF956",
+    content: [
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+    ],
   },
   {
     id: 3,
@@ -66,7 +79,12 @@ const emojis = [
     ],
     // color: "#F8961E",
     color: "#DD800D",
-    emojiColor: "#FFA63A"
+    emojiColor: "#FFA63A",
+    content: [
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+    ],
   },
   {
     id: 4,
@@ -80,7 +98,12 @@ const emojis = [
       70, 77, 79, 80, 81, 90, 91, 92, 93, 94, 104, 105, 106, 116, 117, 118,
     ],
     color: "#1D1D1D",
-    emojiColor: "#808080"
+    emojiColor: "#808080",
+    content: [
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+    ],
   },
   {
     id: 6,
@@ -90,7 +113,7 @@ const emojis = [
     sectionTitle: "See You In Court",
     subtitle:
       "A Canadian judge rules that the thumbs up emoji can be considered a contractual signature",
-      
+
     grid: [
       4, 5, 6, 16, 19, 28, 31, 40, 43, 44, 45, 46, 47, 51, 54, 60, 61, 62, 63,
       66, 67, 68, 69, 70, 71, 78, 84, 90, 91, 92, 93, 94, 95, 102, 108, 115,
@@ -98,7 +121,12 @@ const emojis = [
       142,
     ],
     color: "#9640B1",
-    emojiColor: "#D762FC"
+    emojiColor: "#D762FC",
+    content: [
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1)",
+    ],
   },
 ];
 
