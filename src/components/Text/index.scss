@@ -2,13 +2,16 @@
 
 .body-text {
     box-sizing: border-box;
-    width: 70%;
-    align-self: flex-end;
-    padding-right: $base*5;
+    grid-column: 2 / 7;
+    // width: 70%;
+    // align-self: flex-end;
+    // padding-right: $base*5;
+
 }
 
 .text {
     // for now
+    
     padding: 30% 0;
     text-align: left;
 }

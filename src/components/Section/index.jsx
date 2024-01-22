@@ -32,7 +32,7 @@ const Section = ({
         <div className="half-column">
           <Grid emojis={emojis} color={color} currentEmoji={currentEmoji} emojiColor={emojiColor} grid={grid}></Grid>
         </div>
-        <div className="half-column flex-column all-text" >
+        <div className="half-column all-text" >
           <SectionHeader title={title} subtitle={subtitle} year={year} />
           <Text id={id} content={content}/>
         </div>

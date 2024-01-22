@@ -1,9 +1,12 @@
 @import "../Layout/base.scss";
 
 .all-text {
-    
-    gap: $base * 3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: $base;
 }
+
+
 
 .section-background {
     background-color: $light;
@@ -11,6 +14,7 @@
 
 .individual-section {
     width: getGridWidth();
+    
     margin: 0 auto;
     min-height: 100vh;
     height: 100%;

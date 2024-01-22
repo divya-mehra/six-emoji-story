@@ -6,13 +6,11 @@
 }
 
 .section-header {
-    // width: getWidth(5, 12);
-    width: 80%; // making this full width for the sake of titles
-    align-self: flex-end;
-    align-items: flex-start; // Align children at the start of the cross axis (left side)
-    justify-content: flex-end; // Align children at the end of the main axis (bottom)
-    gap: $base/2;
+    
+    grid-column: 2 / 7;
+
 }
 .section-subtitle {
-    padding-left: 8px;
+    padding-left: $base;
+    grid-column: 2 / 7;
 }
