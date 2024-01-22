@@ -34,7 +34,7 @@ const TitlePage = ({ emojis }) => {
                   onClick={moveToSection}
                   data-number={e.id}
                 >
-                  <h3>{e.year}</h3>
+                  <h3 className="title-page-year">{e.year}</h3>
                   <h3 className="title-page-title">{e.title}</h3>
                 </div>
               );

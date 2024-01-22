@@ -2,15 +2,18 @@
 
 
 .section-year {
-    align-self: flex-start;
+    grid-column: 0 / 1;
+    align-self: end;
 }
 
-.section-header {
+.section-title {
     
     grid-column: 2 / 7;
+    margin-bottom: 0;
 
 }
 .section-subtitle {
-    padding-left: $base;
+    // padding-left: $base;
+    
     grid-column: 2 / 7;
 }

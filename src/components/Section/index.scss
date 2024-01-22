@@ -3,7 +3,7 @@
 .all-text {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: $base;
+    column-gap: $base * 3;
 }
 
 
