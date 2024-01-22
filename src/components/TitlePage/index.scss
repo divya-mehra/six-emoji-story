@@ -7,8 +7,10 @@
 }
 
 .title-page-text {
+    @include body();
     gap: $base;
     cursor: pointer;
+    
 }
 
 .title-page-title {

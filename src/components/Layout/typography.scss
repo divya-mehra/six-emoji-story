@@ -5,6 +5,10 @@
 // font-family: 'Avenir', body;
 @import url("https://use.typekit.net/oaa4jeg.css");
 
+@mixin body {
+    font-family: "Avenir";
+}
+
 body {
     font-size: 1rem;
     font-family: Futura;
@@ -18,8 +22,9 @@ body {
 }
 
 .text {
-    font-size: 1.7rem;
-    font-weight: 300;
+    font-size: 1.5rem;
+    @include body();
+    font-weight: 400;
 }
 
 h2 {
