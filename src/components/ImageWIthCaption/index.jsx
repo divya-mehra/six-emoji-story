@@ -1,12 +1,12 @@
 import "./index.scss";
 
-const ImageWithCaption = ({path}) => {
+const ImageWithCaption = ({path, caption}) => {
 
     console.log(path)
     return ( <div className="imageContainer">
         
         <img src={path} alt="Description" />
-        <div className="annotation">This is my caption.</div>
+        <div className="annotation">{caption}</div>
         </div> );
 }
  

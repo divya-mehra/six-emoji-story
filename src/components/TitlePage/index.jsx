@@ -20,10 +20,10 @@ const TitlePage = ({ emojis }) => {
   return (
     <>
       <Layout title={true}>
-        <div className="half-column main-title">
-          <div>Six</div>
-          <div>Emoji</div>
-          <div>Story</div>
+        <div className="half-column main-title flex-column">
+          <div className="title-div" >6<span className="emoji-letter">o</span><span>Six</span></div>
+          <div className="title-div">Em<span className="emoji-letter">o</span>ji</div>
+          <div className="title-div">St<span className="emoji-letter">o</span>ry</div>
         </div>
         <div className="half-column flex-column">
           <div className="flex-column title-page-all-text ">

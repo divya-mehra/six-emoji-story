@@ -27,7 +27,16 @@ const emojis = [
         annotation: "A second one",
       },
     ],
-    images: ["/images/kurita.png"],
+    images: [
+      {
+        path: "/images/kurita.png",
+        caption: "Kurita sketched out the first 176 emojis by hand",
+      },
+      {
+        path: "/images/pocketbell.png",
+        caption: "Screenshot from an ad for the Pocketbell pager with a heart",
+      },
+    ],
   },
   {
     id: 1,
@@ -56,7 +65,9 @@ const emojis = [
         text: "They won, poo won, humanity won. This may sound like a joke, but what is raw humanity if not dealing with your shit on a daily basis?",
       },
     ],
-    images: [],
+    images: [
+      { path: "/images/drslump.png", caption: "Dr Slump from the early days" },
+    ],
   },
   {
     id: 2,
@@ -114,7 +125,16 @@ const emojis = [
         text: "But since the internet isn’t a place for thoughtfully considered comments, the beehive mistakenly unleashed itself on the innocent Rachael Ray, whose name rings similar to Rachel Roy. What followed was a string of cryptic emoji on a seemingly innocent picture of gazpaacho. Once the beehive realized she wasn't the Becky they were seeking, they moved on to attack others with lemon emojis.",
       },
     ],
-    images: [],
+    images: [
+      {
+        path: "/images/rachael.png",
+        caption: "Lemons & bees for Rachael's delicious gazpacho, and a fan telling her to HANG IN THERE",
+      },
+      {
+        path: "/images/rita.png",
+        caption: "Lemons & bees for Rita. The internet is cruel. Emojis can be cruel too.",
+      },
+    ],
   },
   {
     id: 4,
@@ -130,9 +150,15 @@ const emojis = [
     color: "#1D1D1D",
     emojiColor: "#808080",
     content: [
-      {text: "When Kurita created his first set of emojis, he probably didn’t anticipate 3,664 variations coming into being. Now judges have to decide: in any given context, how much significance does the emoji hold? Is it a joke or does the cute little symbol bear a relation to concrete, potentially life-threatening, actions? In 2016, there were several cases involving the pistol emoji. A Frenchman went to jail for texting his ex-girlfriend the symbol, which the court called a real threat. The year prior, a teenager was charged for posting 👮‍♂️🔫 and another high school student for posting’ meet me in the Library Tuesday,’ followed by 🔫 🔪 💣. (Interestingly, in a case that involved death threat and a 😛, the defendant argued 😛 indicated it was a joke.)",},
-      {text: "With rising gun safety concerns, especially in the United States where mass shootings were becoming horrifyingly commonplace relative to other nations, New Yorkers Against Gun Violence ran a campaign to convince Apple to remove the pistol. Apple acquiesced and now we have a water gun.",},
-      {text: "Other platforms followed, the last being Facebook. Some may ask: well, why do we still have a bomb? Two hypotheses: 1) the bomb is a more stylized version of the real thing, and 2) a bomb can be used to say something is bomb. Again, the language of emoji adapts to our cultural vernacular.",},
+      {
+        text: "When Kurita created his first set of emojis, he probably didn’t anticipate 3,664 variations coming into being. Now judges have to decide: in any given context, how much significance does the emoji hold? Is it a joke or does the cute little symbol bear a relation to concrete, potentially life-threatening, actions? In 2016, there were several cases involving the pistol emoji. A Frenchman went to jail for texting his ex-girlfriend the symbol, which the court called a real threat. The year prior, a teenager was charged for posting 👮‍♂️🔫 and another high school student for posting’ meet me in the Library Tuesday,’ followed by 🔫 🔪 💣. (Interestingly, in a case that involved death threat and a 😛, the defendant argued 😛 indicated it was a joke.)",
+      },
+      {
+        text: "With rising gun safety concerns, especially in the United States where mass shootings were becoming horrifyingly commonplace relative to other nations, New Yorkers Against Gun Violence ran a campaign to convince Apple to remove the pistol. Apple acquiesced and now we have a water gun.",
+      },
+      {
+        text: "Other platforms followed, the last being Facebook. Some may ask: well, why do we still have a bomb? Two hypotheses: 1) the bomb is a more stylized version of the real thing, and 2) a bomb can be used to say something is bomb. Again, the language of emoji adapts to our cultural vernacular.",
+      },
     ],
     images: [],
   },
@@ -154,9 +180,15 @@ const emojis = [
     color: "#9640B1",
     emojiColor: "#D762FC",
     content: [
-      {text: "Emoji may be language of cuteness, but it becomes less cute when thousands of dollars are at stake. Last month, Canadian farmer Chris Achter responded to a contract confirmation with: 👍. His buyer later sued Achter for failing to deliver the goods and the judge ruled that 👍 was just as good as a signature, ordering Achter to pay up $61,442 USD.",},
-      {text: "The meaning behind the innocuous little symbols have been increasingly put to the test ever since 2004 (as emoticons) and 2014 (as emoji). Just before the ruling on SWT v Achter, former Chewy CEO Ryan Cohen was sued by the SEC for tweeting 'At least her cart is full 🌝' in response to negative press on Bed Bath & Beyond, and earlier this year, a Kentucky judge faced a decision of whether 💦 in a text referred to sexual acts or meth.",},
-      {text: "All this begs the question we've been asking all along: Do emoji clarify or obscure? They conflate, confuse, or clarify. Their meaning multiples tenfold. And while our alphabet is finite (though vocabulary, and certainly, language is not), emoji continue to reproduce.",},
+      {
+        text: "Emoji may be language of cuteness, but it becomes less cute when thousands of dollars are at stake. Last month, Canadian farmer Chris Achter responded to a contract confirmation with: 👍. His buyer later sued Achter for failing to deliver the goods and the judge ruled that 👍 was just as good as a signature, ordering Achter to pay up $61,442 USD.",
+      },
+      {
+        text: "The meaning behind the innocuous little symbols have been increasingly put to the test ever since 2004 (as emoticons) and 2014 (as emoji). Just before the ruling on SWT v Achter, former Chewy CEO Ryan Cohen was sued by the SEC for tweeting 'At least her cart is full 🌝' in response to negative press on Bed Bath & Beyond, and earlier this year, a Kentucky judge faced a decision of whether 💦 in a text referred to sexual acts or meth.",
+      },
+      {
+        text: "All this begs the question we've been asking all along: Do emoji clarify or obscure? They conflate, confuse, or clarify. Their meaning multiples tenfold. And while our alphabet is finite (though vocabulary, and certainly, language is not), emoji continue to reproduce.",
+      },
     ],
     images: [],
   },

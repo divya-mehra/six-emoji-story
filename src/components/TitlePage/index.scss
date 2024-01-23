@@ -7,7 +7,24 @@
 }
 
 .main-title {
-    line-height: 100%
+    width: 100%;
+    line-height: 100%;
+    text-align: justify;
+}
+
+.emoji-letter {
+    color: #ffcc03;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 70px;
+    height: 70px;
+    background: #ffcc03;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.title-div {
+    align-self:flex-end;
 }
 
 .title-page-text {

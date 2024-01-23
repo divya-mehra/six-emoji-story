@@ -6,7 +6,6 @@ import { SectionHeader } from "../Headlines";
 import Text from "../Text";
 import Transition from "../Transition";
 import { useState, useRef } from "react";
-import Annotation from "../Annotation";
 import ImageWithCaption from "../ImageWIthCaption";
 
 const Section = ({
@@ -23,6 +22,7 @@ const Section = ({
   color,
   content,
   images,
+  annotations
 }) => {
   // console.log(emojis);
 
@@ -53,8 +53,8 @@ const Section = ({
       <div className="flex">
         <div className="half-column image-left gridded-column">
           {images.length > 0 &&
-            images.map((image, index) => (
-              <ImageWithCaption key={index} path={image} />
+            images.map((item, index) => (
+              <ImageWithCaption key={index} path={item.path} caption={item.caption} />
             ))}
         </div>
         <div className="half-column image-right gridded-column"></div>
