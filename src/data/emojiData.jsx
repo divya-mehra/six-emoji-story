@@ -3,7 +3,7 @@ const emojis = [
     id: 0,
     name: "heart",
     year: "1999",
-    title: "Young <3",
+    title: "Young ❤️",
     sectionTitle: "Young Love",
     subtitle: "The first* set of emojis is created in Japan",
     grid: [

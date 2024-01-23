@@ -1,9 +1,13 @@
 @import "../Layout/base.scss";
 
 .title-page-all-text {
-    gap: $base * 2;
+    gap: $base * 1.5;
     width: 90%;
     align-self: flex-end;
+}
+
+.main-title {
+    line-height: 100%
 }
 
 .title-page-text {
@@ -14,11 +18,16 @@
 }
 
 .title-page-title {
+    // font-size: 1.3rem;
+    // font-weight: 600;
+    // text-transform: lowercase;
     font-weight: 400;
 }
 
 .title-page-year {
+    font-size: 1.3rem;
     font-weight: 600;
+    // font-weight: 300;
 }
 
 

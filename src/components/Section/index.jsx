@@ -6,6 +6,7 @@ import { SectionHeader } from "../Headlines";
 import Text from "../Text";
 import Transition from "../Transition";
 import { useState, useRef } from "react";
+import Annotation from "../Annotation";
 
 const Section = ({
   emojis,
@@ -35,6 +36,7 @@ const Section = ({
         <div className="half-column all-text" >
           <SectionHeader title={title} subtitle={subtitle} year={year} />
           <Text id={id} content={content}/>
+          <Annotation/>
         </div>
       </div>
       {/* <Transition start={false} currentColor={color} id={id} emojis={emojis}/> */}
