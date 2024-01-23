@@ -15,6 +15,16 @@
   width: getWidth(6, 12);
 }
 
+// Grids
+
+.gridded-column {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: $base * 3;
+  align-items: baseline;
+}
+
+
 
 .title-page {
     margin: 0 auto;

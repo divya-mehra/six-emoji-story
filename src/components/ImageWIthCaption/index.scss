@@ -1,1 +1,14 @@
 @import "../Layout/base.scss";
+
+.imageContainer {
+//   position: relative;
+  box-sizing: border-box;
+//   height: auto; /* Allow the height to adjust based on the image's aspect ratio */
+  padding-bottom: $base*3;
+grid-column: 2/7;
+}
+
+.imageContainer > img {
+  max-width: 100%;
+  object-fit: cover;
+}

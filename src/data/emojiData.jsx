@@ -15,9 +15,12 @@ const emojis = [
     color: "#D0493A",
     emojiColor: "#FF5744",
     content: [
-      "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1) The heart is the most cited symbol, but records say the devices also had numeric codes that would send short pre-programmed messages with illustrations, like “I won’t forgive you” with a crying face, or 'I'm sorry.' They knew what kids had to say.",
-      "When they removed the symbol a few years later, sales declined. Employee Shigetaka Kurita, who was working on Docomo’s mobile internet platform at the time, took notice and the company tasked him with adding emojis to the carrier’s set of characters. Limited to 12x12 pixels, he drew out 176 symbols on paper and handed them over to the developer. Some of his decisions were based on observations of human behavior, others on personal preference. He likes to ski. So, he made a symbol for a big car that could hold his skis.",
-      "Rumor has it that without the popularity of the heart symbol, Docomo wouldn't have caught on to the promise of the emoji on mobile devices.",
+      {text: "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1) The heart is the most cited symbol, but records say the devices also had numeric codes that would send short pre-programmed messages with illustrations, like “I won’t forgive you” with a crying face, or 'I'm sorry.' They knew what kids had to say.", annotation: "Here's an annotation"},
+      {text: "When they removed the symbol a few years later, sales declined. Employee Shigetaka Kurita, who was working on Docomo’s mobile internet platform at the time, took notice and the company tasked him with adding emojis to the carrier’s set of characters. Limited to 12x12 pixels, he drew out 176 symbols on paper and handed them over to the developer. Some of his decisions were based on observations of human behavior, others on personal preference. He likes to ski. So, he made a symbol for a big car that could hold his skis."},
+      {text: "Rumor has it that without the popularity of the heart symbol, Docomo wouldn't have caught on to the promise of the emoji on mobile devices.", annotation: "A second one"},
+    ],
+    images: [
+      "/images/kurita.png",
     ],
   },
   {
@@ -41,6 +44,7 @@ const emojis = [
       "One big point of contention was the poo emoji. The symbol became popular in Japan through a loveable character in the 80s show, Dr Slump. But some people in Silicon Valley thought the it was offensive. What would people think of them if they added a pile of steaming shit (and that too, a smiling one!) to their vetted vocabulary? Japnese project manager, Takeshi Kishimoto was adamant: the emoji is essential. It says “’I don’t like that,’ but softly,” bringing an air of lighteness. It expresses a bad day with a laugh, standing in for the body language we lack in online communication. The team fought for it.",
       "They won, poo won, humanity won. This may sound like a joke, but what is raw humanity if not dealing with your shit on a daily basis?",
     ],
+    images: [],
   },
   {
     id: 2,
@@ -62,6 +66,7 @@ const emojis = [
       "Two years after the campaign appeared, the Unicode Consortium finally added five skin tone modifiers to the “standard” yellow. The colors came from something called the Fitzpatrick scale, chosen for its so-called neutrality derived from its medical origins – but is anything really neutral?",
       "Once the modifiers were out, not everyone chose to use them. The Atlantic even published an article, 'Is It Okay to Use the White Emoji?' So did many others until the people laughed and said, stop talking about emoji (too late). Regardless of race, the question remains: do I want to draw attention to the color of my skin in every message I send out? Our vocabulary is a reflection of societal issues and norms, and representation is one of the most pressing matters we face today.",
     ],
+    images: [],
   },
   {
     id: 3,
@@ -85,6 +90,7 @@ const emojis = [
       " Some key context: Lemonade included a song called Sorry, ending in the line, 'He better call Becky with the good hair.' The singer’s fans, aka the beehive, identified Becky as a woman with whom Jay-Z had an affair, and believed this person to be fashion designer Rachel Roy.",
       "But since the internet isn’t a place for thoughtfully considered comments, the beehive mistakenly unleashed itself on the innocent Rachael Ray, whose name rings similar to Rachel Roy. What followed was a string of cryptic emoji on a seemingly innocent picture of gazpaacho. Once the beehive realized she wasn't the Becky they were seeking, they moved on to attack others with lemon emojis.",
     ],
+    images: [],
   },
   {
     id: 4,
@@ -104,6 +110,7 @@ const emojis = [
       "With rising gun safety concerns, especially in the United States where mass shootings were becoming horrifyingly commonplace relative to other nations, New Yorkers Against Gun Violence ran a campaign to convince Apple to remove the pistol. Apple acquiesced and now we have a water gun.",
       "Other platforms followed, the last being Facebook. Some may ask: well, why do we still have a bomb? Two hypotheses: 1) the bomb is a more stylized version of the real thing, and 2) a bomb can be used to say something is bomb. Again, the language of emoji adapts to our cultural vernacular.",
     ],
+    images: [],
   },
   {
     id: 5,
@@ -127,6 +134,7 @@ const emojis = [
       "The meaning behind the innocuous little symbols have been increasingly put to the test ever since 2004 (as emoticons) and 2014 (as emoji). Just before the ruling on SWT v Achter, former Chewy CEO Ryan Cohen was sued by the SEC for tweeting 'At least her cart is full 🌝' in response to negative press on Bed Bath & Beyond, and earlier this year, a Kentucky judge faced a decision of whether 💦 in a text referred to sexual acts or meth.",
       "All this begs the question we've been asking all along: Do emoji clarify or obscure? They conflate, confuse, or clarify. Their meaning multiples tenfold. And while our alphabet is finite (though vocabulary, and certainly, language is not), emoji continue to reproduce.",
     ],
+    images: [],
   },
 ];
 

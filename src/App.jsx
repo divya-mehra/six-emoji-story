@@ -29,6 +29,7 @@ function App() {
             color={e.color}
             emojiColor={e.emojiColor}
             content={e.content}
+            images={e.images}
           />
         );
       })}

@@ -1,13 +1,5 @@
 @import "../Layout/base.scss";
 
-.all-text {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: $base * 3;
-}
-
-
-
 .section-background {
     background-color: $light;
 }

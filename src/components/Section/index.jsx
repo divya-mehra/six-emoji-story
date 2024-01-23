@@ -7,6 +7,7 @@ import Text from "../Text";
 import Transition from "../Transition";
 import { useState, useRef } from "react";
 import Annotation from "../Annotation";
+import ImageWithCaption from "../ImageWIthCaption";
 
 const Section = ({
   emojis,
@@ -20,29 +21,45 @@ const Section = ({
   id,
   grid,
   color,
-  content
+  content,
+  images,
 }) => {
   // console.log(emojis);
 
+  let gridHeight = "100%";
 
   return (
-    
-    <div className="section-background" style={{backgroundColor: color}}>
-        {/* <Transition start={true} currentColor={color} id={id} emojis={emojis}/> */}
+    <div className="section-background" style={{ backgroundColor: color }}>
+      {/* <Transition start={true} currentColor={color} id={id} emojis={emojis}/> */}
       <div className="flex individual-section" data-panel-number={number}>
         <div className="half-column">
-          <Grid emojis={emojis} color={color} currentEmoji={currentEmoji} emojiColor={emojiColor} grid={grid}></Grid>
+          <div className="gridArea" style={{ height: gridHeight }}>
+            <Grid
+              emojis={emojis}
+              color={color}
+              currentEmoji={currentEmoji}
+              emojiColor={emojiColor}
+              grid={grid}
+            ></Grid>
+          </div>
         </div>
-        <div className="half-column all-text" >
+        <div className="half-column gridded-column">
           <SectionHeader title={title} subtitle={subtitle} year={year} />
-          <Text id={id} content={content}/>
-          <Annotation/>
+          <Text id={id} content={content} />
+
         </div>
       </div>
       {/* <Transition start={false} currentColor={color} id={id} emojis={emojis}/> */}
-      
+      <div className="flex">
+        <div className="half-column image-left gridded-column">
+          {images.length > 0 &&
+            images.map((image, index) => (
+              <ImageWithCaption key={index} path={image} />
+            ))}
+        </div>
+        <div className="half-column image-right gridded-column"></div>
+      </div>
     </div>
-    
   );
 };
 

@@ -1,20 +1,26 @@
 import "./index.scss";
-import { SectionHeader } from "../Headlines";
 
-const Text = ({id, content}) => {
+const Text = ({ id, content }) => {
+  console.log();
 
-  console.log()
+  // this has text and annotations
 
   return (
-    <div className="body-text">
-      
-
+    <div className="gridded-section">
       {content.map((item, index) => (
-        <div className="text" key={index}>{item}</div>
+        
+        <div className="body-text" key={index}>
+            <div className="text" style={{gridColumn: "2 / 7"}} >
+            {item.text}
+            </div>
+            <div className="annotation-text" key={index}>
+            {item.annotation}
+          </div>
+        </div>
+          
+
       ))}
-      </div>
-      
-    
+    </div>
   );
 };
 

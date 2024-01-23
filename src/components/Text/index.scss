@@ -1,11 +1,29 @@
 @import '../Layout/base.scss';
 
-.body-text {
+.gridded-section {
     box-sizing: border-box;
-    grid-column: 2 / 7;
-    // width: 70%;
-    // align-self: flex-end;
-    // padding-right: $base*5;
+    grid-column: 1 / -1; /* Span all columns */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    align-items: baseline;
+}
+
+.body-text {
+    // grid-column: 2 / 7;
+    grid-column: 1 / -1; /* Span all columns */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    gap: $base* 2;
+
+}
+
+.annotation-text {
+    grid-row: 1;
+    box-sizing: border-box;
+    
+    
 
 }
 
@@ -15,3 +33,4 @@
     padding: 30% 0;
     text-align: left;
 }
+
