@@ -13,7 +13,7 @@ const Text = ({ id, content }) => {
             <div className="text" style={{gridColumn: "2 / 7"}} >
             {item.text}
             </div>
-            <div className="annotation-text" key={index}>
+            <div className="annotation-text annotation" key={index}>
             {item.annotation}
           </div>
         </div>
