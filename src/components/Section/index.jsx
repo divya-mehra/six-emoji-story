@@ -50,7 +50,7 @@ const Section = ({
       </div>
       {/* <Transition start={false} currentColor={color} id={id} emojis={emojis}/> */}
       <div className="gridded-images">
-        <div className=" image-left ">
+        <div className=" image-left" style={{gridRow: (id%2 !== 0) ? 1 : 2}}>
           {images.length > 0 &&
             images.map((item, index) => {
               if (index % 2 === 0) {
@@ -65,7 +65,7 @@ const Section = ({
               return null; // Render nothing for even indexes in the right column
             })}
         </div>
-        <div className=" image-right">
+        <div className="image-right" style={{gridRow: (id%2 === 0) ? 1 : 2}}>
           {images.length > 0 &&
             images.map((item, index) => {
               if (index % 2 !== 0) {
