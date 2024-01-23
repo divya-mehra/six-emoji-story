@@ -1,35 +1,35 @@
-@import '../Layout/base.scss';
+@import "../Layout/base.scss";
 
 .gridded-section {
-    box-sizing: border-box;
-    grid-column: 1 / -1; /* Span all columns */
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    align-items: baseline;
+  box-sizing: border-box;
+  grid-column: 1 / -1; /* Span all columns */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  align-items: baseline;
 }
 
 .body-text {
-    // grid-column: 2 / 7;
-    grid-column: 1 / -1; /* Span all columns */
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    align-items: baseline;
-    gap: $base* 2;
-
+  // grid-column: 2 / 7;
+  grid-column: 1 / -1; /* Span all columns */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: baseline;
+  gap: $base * 2;
 }
 
 .annotation-text {
-    grid-row: 1;
-    box-sizing: border-box;
-    
-
+  grid-row: 1;
+  box-sizing: border-box;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: $base*2;
 }
 
 .text {
-    // for now
-    
-    padding: 30% 0;
-    text-align: left;
-}
+  // for now
 
+  padding: 30% 0;
+  text-align: left;
+}

@@ -22,7 +22,7 @@ const Section = ({
   color,
   content,
   images,
-  annotations
+  annotations,
 }) => {
   // console.log(emojis);
 
@@ -46,18 +46,40 @@ const Section = ({
         <div className="half-column gridded-column">
           <SectionHeader title={title} subtitle={subtitle} year={year} />
           <Text id={id} content={content} />
-
         </div>
       </div>
       {/* <Transition start={false} currentColor={color} id={id} emojis={emojis}/> */}
-      <div className="flex">
-        <div className="half-column image-left gridded-column">
+      <div className="gridded-images">
+        <div className=" image-left ">
           {images.length > 0 &&
-            images.map((item, index) => (
-              <ImageWithCaption key={index} path={item.path} caption={item.caption} />
-            ))}
+            images.map((item, index) => {
+              if (index % 2 === 0) {
+                return (
+                  <ImageWithCaption
+                    key={index}
+                    path={item.path}
+                    caption={item.caption}
+                  />
+                );
+              }
+              return null; // Render nothing for even indexes in the right column
+            })}
         </div>
-        <div className="half-column image-right gridded-column"></div>
+        <div className=" image-right">
+          {images.length > 0 &&
+            images.map((item, index) => {
+              if (index % 2 !== 0) {
+                return (
+                  <ImageWithCaption
+                    key={index}
+                    path={item.path}
+                    caption={item.caption}
+                  />
+                );
+              }
+              return null; // Render nothing for even indexes in the right column
+            })}
+        </div>
       </div>
     </div>
   );

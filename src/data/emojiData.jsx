@@ -17,20 +17,22 @@ const emojis = [
     content: [
       {
         text: "By the mid 1990s, the pager was an absolute sensation amongst Japanese teenagers. Carrier NTT Docomo sold its Pocket Bell pagers with heart symbols. (1) The heart is the most cited symbol, but records say the devices also had numeric codes that would send short pre-programmed messages with illustrations, like “I won’t forgive you” with a crying face, or 'I'm sorry.' They knew what kids had to say.",
-        annotation: "Here's an annotation",
+        annotation: ["(1) Telephones were also one of the pictoral symbols available (International Herald Tribune)", "(2) Recent records show the first emojis may have actually been made by Softbank in 1997"]
+        
       },
       {
         text: "When they removed the symbol a few years later, sales declined. Employee Shigetaka Kurita, who was working on Docomo’s mobile internet platform at the time, took notice and the company tasked him with adding emojis to the carrier’s set of characters. Limited to 12x12 pixels, he drew out 176 symbols on paper and handed them over to the developer. Some of his decisions were based on observations of human behavior, others on personal preference. He likes to ski. So, he made a symbol for a big car that could hold his skis.",
       },
       {
-        text: "Rumor has it that without the popularity of the heart symbol, Docomo wouldn't have caught on to the promise of the emoji on mobile devices.",
-        annotation: "A second one",
+        text: "Without the popularity of the heart symbol, Docomo wouldn't have caught on to the promise of the emoji on mobile devices. (2)",
+        
+        
       },
     ],
     images: [
       {
         path: "/images/kurita.png",
-        caption: "Kurita sketched out the first 176 emojis by hand",
+        caption: "Kurita demonstrating how he sketched out the first emojis by hand",
       },
       {
         path: "/images/pocketbell.png",

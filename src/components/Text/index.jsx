@@ -13,9 +13,13 @@ const Text = ({ id, content }) => {
             <div className="text" style={{gridColumn: "2 / 7"}} >
             {item.text}
             </div>
-            <div className="annotation-text annotation" key={index}>
-            {item.annotation}
+            {item.annotation && item.annotation.length > 0 && (<div className="annotation-text annotation" key={index}>
+            {item.annotation.map((annotation, annotationIndex) => (
+              <div key={annotationIndex}>{annotation}</div>
+            ))}
+            
           </div>
+            )}
         </div>
           
 
