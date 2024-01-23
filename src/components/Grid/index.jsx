@@ -6,12 +6,41 @@ import GridInterface from "../GridInterface";
 
 const Grid = ({ emojis, grid, currentEmoji, color, emojiColor }) => {
   const [gridInView, setGridInView] = useState(false);
+  const [debouncedInView, setDebouncedInView] = useState(false);
 
   // check if in view
   const [ref, inView] = useInView({
     triggerOnce: false,
     threshold: 0.5,
   });
+
+  // Debounce function
+  const debounce = (func, delay) => {
+    let timeoutId;
+    return function (...args) {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+      timeoutId = setTimeout(() => {
+        func(...args);
+      }, delay);
+    };
+  };
+
+  // Debounced version of setDebouncedInView
+  const debouncedSetInView = debounce((value) => {
+    setDebouncedInView(value);
+  }, 300); // Adjust the delay as needed
+
+  // Update debouncedInView when inView changes
+  useEffect(() => {
+    debouncedSetInView(inView);
+  }, [inView, debouncedSetInView]);
+
+  // Update the gridInView state when debouncedInView changes
+  useEffect(() => {
+    setGridInView(debouncedInView);
+  }, [debouncedInView]);
 
   // make the grid
 
